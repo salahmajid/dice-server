@@ -1,0 +1,15 @@
+{
+  "name": "dice-server",
+  "version": "1.0.0",
+  "description": "A web-based dice roller with Node.js",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "keywords": ["dice", "roller", "game", "random"],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
