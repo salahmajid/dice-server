@@ -11,7 +11,7 @@ on:
 
 jobs:
   build:
-    runs-on: windows-latest
+    runs-on: ubuntu-latest
     permissions:
       contents: read #This is required for actions/checkout
 
@@ -28,7 +28,7 @@ jobs:
           npm install
           npm run build --if-present
           npm run test --if-present
-      
+
       - name: Upload artifact for deployment job
         uses: actions/upload-artifact@v4
         with:
@@ -51,13 +51,13 @@ jobs:
       - name: Login to Azure
         uses: azure/login@v2
         with:
-          client-id: ${{ secrets.AZUREAPPSERVICE_CLIENTID_7D48A931807C4DE194541DE8F29759B2 }}
-          tenant-id: ${{ secrets.AZUREAPPSERVICE_TENANTID_1CBB2F1BBF55469DA0AF673F1DC83C2C }}
-          subscription-id: ${{ secrets.AZUREAPPSERVICE_SUBSCRIPTIONID_B582B578AC8F47D5A4569FE2619E9CEB }}
+          client-id: ${{ secrets.AZUREAPPSERVICE_CLIENTID_BBB2A94D1BFC4FC3AC89DCCF26CAD879 }}
+          tenant-id: ${{ secrets.AZUREAPPSERVICE_TENANTID_FDDE58B44D71473A9D4CD7AAC06C3DD9 }}
+          subscription-id: ${{ secrets.AZUREAPPSERVICE_SUBSCRIPTIONID_C3386FABF1704226839124F6950311FF }}
 
       - name: 'Deploy to Azure Web App'
-        uses: azure/webapps-deploy@v3
         id: deploy-to-webapp
+        uses: azure/webapps-deploy@v3
         with:
           app-name: 'dice-server-sja'
           slot-name: 'Production'
