@@ -1,4 +1,4 @@
-{{
+{
   "name": "dice-server",
   "version": "1.0.0",
   "description": "Web-Dice-Roller assignment with Node.js",
