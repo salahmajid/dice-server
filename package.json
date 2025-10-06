@@ -4,8 +4,7 @@
   "description": "Web-Dice-Roller assignment with Node.js",
   "main": "app.js",
   "scripts": {
-    "start": "node app.js",
-    "test": "echo \"No tests specified\" && exit 0"
+    "start": "node app.js"
   },
   "author": "Salah Abdelmajid",
   "license": "ISC",
