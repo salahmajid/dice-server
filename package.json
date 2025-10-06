@@ -4,7 +4,7 @@
   "description": "Web-Dice-Roller assignment with Node.js",
   "main": "app.js",
   "scripts": {
-    "test": "mocha"
+    "test": "npx mocha"
   },
   "author": "Salah Abdelmajid",
   "license": "ISC",
@@ -19,5 +19,9 @@
   "bugs": {
     "url": "https://github.com/salahmajid/dice-server/issues"
   },
-  "homepage": "https://github.com/salahmajid/dice-server#readme"
+  "homepage": "https://github.com/salahmajid/dice-server#readme",
+  "devDependencies": {
+    "mocha": "^11.7.4"
+  }
+  
 }
