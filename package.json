@@ -11,5 +11,13 @@
   "dependencies": {
     "cors": "^2.8.5",
     "express": "^5.1.0"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/salahmajid/dice-server.git"
+  },
+  "bugs": {
+    "url": "https://github.com/salahmajid/dice-server/issues"
+  },
+  "homepage": "https://github.com/salahmajid/dice-server#readme"
 }

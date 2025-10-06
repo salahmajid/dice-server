@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html>
+    <head><title>API Test</title></head>
+<body>
+    <h1>API Test Page</h1>
+    <button onclick ="fetch('/api/wake').then(r=>r.json()).then(d=>alert(JSON.stringify(d)))">Test Wake</button>
+     <button onclick ="fetch('/api/roll').then(r=>r.json()).then(d=>alert(JSON.stringify(d)))">Test Roll</button>
+      <button onclick ="fetch('/api/no-cors').then(r=>r.json()).then(d=>alert(JSON.stringify(d)))">Test CORS</button>
+</body>
+
+</html>
