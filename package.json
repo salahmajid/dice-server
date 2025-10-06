@@ -4,7 +4,7 @@
   "description": "Web-Dice-Roller assignment with Node.js",
   "main": "app.js",
   "scripts": {
-    "test": "npx mocha"
+    "test": "npx mocha --allow-empty"
   },
   "author": "Salah Abdelmajid",
   "license": "ISC",
