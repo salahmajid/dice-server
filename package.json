@@ -1,5 +1,5 @@
 {
-  "name": "dice-server",
+  "name": "dice-server-sja",
   "version": "1.0.0",
   "description": "Web-Dice-Roller assignment with Node.js",
   "main": "app.js",
